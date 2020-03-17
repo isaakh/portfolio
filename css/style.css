@@ -177,6 +177,7 @@ p{
   border-left: 6px solid white;
   height: 100px;
   padding-left: 20px;
+  grid-column: 2/2;
 }
 
 .history-card-one, .history-card-two, .history-card-three, .history-card-four, .history-card-five, .history-card-six{
@@ -191,14 +192,14 @@ p{
 .history-card-img-left img{
   border-radius: 15%;
   height: 250px;
-  padding-right: 20px;
+/*   padding-right: 20px; */
   color: #FFFFFF;
 }
 
 .history-card-img-right img{
   border-radius: 15%;
   height: 250px;
-  padding-left: 20px;
+/*   padding-left: 20px; */
   color: #FFFFFF;
 }
 
@@ -217,12 +218,12 @@ p{
   border-left: 6px solid white;
   height: 100px;
   grid-row: 4/4;
-  grid-column: 4/4
+  grid-column: 2/2;
 }
 
 .history-card-two{
   grid-row: 5/5;
-  grid-column: 3/7;
+/*   grid-column: 3/7; */
 }
 
 .history-line-two{
@@ -239,7 +240,7 @@ p{
 
 .history-card-four{
   grid-row: 9/9;
-  grid-column: 3/7;
+/*   grid-column: 3/7; */
 }
 
 .history-line-four{
@@ -256,7 +257,7 @@ p{
 
 .history-card-six{
   grid-row: 13/13;
-  grid-column: 3/7;
+/*   grid-column: 3/7; */
 }
 
 .gallery{
