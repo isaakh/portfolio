@@ -1,0 +1,623 @@
+a.skip{
+  background-color: #FFFFFF;
+  font-family: 'Faustina', serif;
+  border: 2px solid #000000;
+  top: -40px;
+}
+
+body{
+  background-color: #CCCCCC;
+  /* opacity: 0.5; */
+  background-image: url("../images/air-canada-centre.jpg");
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;
+  margin: 0;
+}
+
+/* .body-history{
+  background-color: #CCCCCC;
+  background-image: none;
+} */
+
+/* nav{
+  height: 100px;
+  text-align: center;
+  margin: auto;
+} */
+
+.container, .container-roster{
+  display: grid;
+  grid-template-columns: 50px auto auto auto 50px;
+  grid-template-rows: 100px auto auto auto auto 175px;
+  grid-row-gap: 50px;
+}
+
+.container-roster{
+  grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto auto 175px;
+}
+
+.container-history{
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto auto auto 175px;
+}
+
+.container-gallery{
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: 100px auto auto 175px;
+}
+
+header{
+  height: 100px;
+  background-color: #000000;
+  grid-column: 1/-1;
+  grid-row: 1/1;
+}
+
+.nav_links{
+  display: none;
+  padding-top: 15px;
+  list-style-type: none;
+  float: right;
+  background-color: #000000;
+}
+
+.nav_item{
+  padding-right: 40px;
+  font-family: 'Rajdhani', sans-serif;
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+nav a{
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav a:hover{
+  color: #000000;
+  /* text-decoration: underline; */
+  background-color: #ddd;
+}
+
+.hamburger-icon{
+  float: right;
+  padding-right: 20px;
+}
+
+.hamburger-icon:hover{
+  cursor: pointer;
+}
+
+.hamburger-icon p{
+  font-size: 30px;
+}
+
+.nav_links.toggleCls{
+  display: block;
+}
+
+header img{
+  float: left;
+  height: 100px;
+  padding-left: 10px;
+}
+
+/* nav a.active{
+  color: #FFFFFF;
+  background-color: #CE1141;
+} */
+
+.main-text{
+  grid-column: 1/-1;
+  grid-row: 2/2;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.main-text-background{
+
+}
+
+.main-text h1{
+  font-size: 100px;
+  font-family: 'Rajdhani', sans-serif;
+  /* margin: auto; */
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+p{
+  color: #FFFFFF;
+  font-family: 'Faustina', serif;
+  font-size: 20px;
+}
+
+.text-block-uno, .text-block-dos, .text-block-tres, .player-card{
+  background-color: rgba(0, 0, 0, .8);
+  border: 10px solid black;
+  padding: 30px;
+  grid-column: 2/5;
+  text-align: center;
+}
+
+.player-card{
+  padding: 10px;
+  grid-column: 2/5;
+  color: #FFFFFF;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.player-card img{
+  height: 200px;
+  display: block;
+  float: none;
+  padding-left: 30px;
+}
+
+.player-card h2{
+  display: block;
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-text{
+  margin-top: -5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 22px;
+}
+
+.history-line-one, .history-line-two, .history-line-three, .history-line-four, .history-line-five{
+  border-left: 6px solid white;
+  height: 100px;
+  padding-left: 20px;
+}
+
+.history-card-one, .history-card-two, .history-card-three, .history-card-four, .history-card-five, .history-card-six{
+  background-color: #000000;
+  border: 10px solid black;
+  padding: 30px;
+  grid-column: 2/2;
+  grid-row: 3/3;
+  box-shadow: 0px 0px 15px #F2F2F2;
+}
+
+.history-card-img-left img{
+  border-radius: 15%;
+  height: 250px;
+  padding-right: 20px;
+  color: #FFFFFF;
+}
+
+.history-card-img-right img{
+  border-radius: 15%;
+  height: 250px;
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+
+.history-card-title h2{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 60px;
+  color: #FFFFFF;
+  margin-top: -10px;
+}
+
+.history-card-title p{
+  margin-top: -30px;
+}
+
+.history-line-one{
+  border-left: 6px solid white;
+  height: 100px;
+  grid-row: 4/4;
+  grid-column: 4/4
+}
+
+.history-card-two{
+  grid-row: 5/5;
+  grid-column: 3/7;
+}
+
+.history-line-two{
+  grid-row: 6/6;
+}
+
+.history-card-three{
+  grid-row: 7/7;
+}
+
+.history-line-three{
+  grid-row: 8/8;
+}
+
+.history-card-four{
+  grid-row: 9/9;
+  grid-column: 3/7;
+}
+
+.history-line-four{
+  grid-row: 10/10;
+}
+
+.history-card-five{
+  grid-row: 11/11;
+}
+
+.history-line-five{
+  grid-row: 12/12;
+}
+
+.history-card-six{
+  grid-row: 13/13;
+  grid-column: 3/7;
+}
+
+.gallery{
+  grid-row: 3/3;
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0,0,0,0.8);
+  padding: 30px;
+  border: 10px solid black;
+}
+
+.gallery img{
+  height: 250px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px #000000;
+}
+
+
+.button{
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #CE1141;
+  padding: 10px;
+  font-size: 20px;
+  border: 3px solid #CE1141;
+  border-radius: 8px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: #FFFFFF;
+  color: #CE1141;
+  cursor: pointer;
+}
+
+footer{
+  grid-row: -1/-1;
+  grid-column: 1/-1;
+  background-color: #000000;
+  text-align: center;
+  height: 320px;
+}
+
+.footer-container{
+  /* display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px; */
+  text-align: center;
+}
+
+.footer-one{
+  grid-column: 1/1;
+}
+
+.footer-one p{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.footer-two{
+  grid-column: 2/2;
+  font-family: 'Rajdhani', sans-serif;
+  color: #FFFFFF;
+}
+
+.footer-two ul{
+  list-style-type: none;
+  text-align: center;
+  padding-right: 35px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.footer-two a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-two a:hover{
+  text-decoration: underline;
+}
+
+
+/* BEGIN RESPONSIVE DESIGN FOR LARGE SCREEN */
+
+@media screen and (min-width: 850px){
+
+  /* header{
+    height: 100px;
+    background-color: #000000;
+    grid-column: 1/-1;
+    grid-row: 1/1;
+  } */
+
+  .nav_links{
+    padding-top: 15px;
+    list-style-type: none;
+    color: #E5E5E5;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+  nav a.active{
+    color: #FFFFFF;
+    /* text-decoration: underline; */
+    background-color: #CE1141;
+  }
+
+  @-webkit-keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  @keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .main-text-background h1{
+    animation-name: fade-in;
+    animation-duration: 3s;
+  }
+
+  .hamburger-icon{
+    display: none;
+  }
+
+  .container, .container-roster{
+    grid-template-columns: 100px auto auto auto auto auto 100px;
+  }
+
+  .container-history{
+    display: grid;
+    grid-template-columns: 100px auto auto 50px auto auto 100px;
+    grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto auto auto 175px;
+  }
+
+  .container-gallery{
+    grid-template-columns: 100px auto 100px;
+  }
+
+  .text-block-uno, .text-block-dos, .text-block-tres, .player-card{
+    grid-column: 2/6;
+    text-align: left;
+  }
+
+  .button{
+    float: right;
+  }
+
+  .text-block-uno, .text-block-dos, .text-block-tres, .player-card{
+    background-color: rgba(0, 0, 0, .8);
+    border: 10px solid black;
+    padding: 30px;
+    grid-column: 2/5;
+    text-align: center;
+  }
+
+  .player-card{
+    padding: 10px;
+    grid-column: 3/6;
+    color: #FFFFFF;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: left;
+  }
+
+  .player-card img{
+    height: 200px;
+    display: inline;
+    padding-left: 0px;
+    float: left;
+  }
+
+  .player-card h2{
+    display: inline;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-text{
+    margin-top: -5px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+  }
+
+  .history-line-one, .history-line-two, .history-line-three, .history-line-four, .history-line-five{
+    border-left: 6px solid white;
+    height: 100px;
+    grid-row: 4/4;
+    grid-column: 4/4;
+  }
+
+  .history-card-one, .history-card-two, .history-card-three, .history-card-four, .history-card-five, .history-card-six{
+    background-color: #000000;
+    border: 10px solid black;
+    padding: 30px;
+    grid-column: 2/6;
+    grid-row: 3/3;
+    box-shadow: 0px 0px 15px #F2F2F2;
+  }
+
+  .history-card-img-left img{
+    border-radius: 15%;
+    height: 250px;
+    padding-right: 20px;
+    color: #FFFFFF;
+    float: left;
+  }
+
+  .history-card-img-right img{
+    border-radius: 15%;
+    height: 250px;
+    padding-left: 20px;
+    color: #FFFFFF;
+    float: right;
+  }
+
+  .history-card-title h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-top: -10px;
+  }
+
+  .history-card-title p{
+    margin-top: -30px;
+  }
+
+  .history-line-one{
+    border-left: 6px solid white;
+    height: 100px;
+    grid-row: 4/4;
+    grid-column: 4/4
+  }
+
+  .history-card-two{
+    grid-row: 5/5;
+    grid-column: 3/7;
+  }
+
+  .history-line-two{
+    grid-row: 6/6;
+  }
+
+  .history-card-three{
+    grid-row: 7/7;
+  }
+
+  .history-line-three{
+    grid-row: 8/8;
+  }
+
+  .history-card-four{
+    grid-row: 9/9;
+    grid-column: 3/7;
+  }
+
+  .history-line-four{
+    grid-row: 10/10;
+  }
+
+  .history-card-five{
+    grid-row: 11/11;
+  }
+
+  .history-line-five{
+    grid-row: 12/12;
+  }
+
+  .history-card-six{
+    grid-row: 13/13;
+    grid-column: 3/7;
+  }
+
+
+  .gallery img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .gallery img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+  footer{
+    grid-row: -1/-1;
+    grid-column: 1/-1;
+    background-color: #000000;
+    text-align: center;
+    height: 190px;
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px;
+    text-align: left;
+  }
+
+  .footer-one{
+    grid-column: 1/1;
+    padding-left: 20px;
+  }
+
+  .footer-one p{
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .footer-two{
+    grid-column: 2/2;
+    font-family: 'Rajdhani', sans-serif;
+    color: #FFFFFF;
+  }
+
+  .footer-two ul{
+    list-style-type: none;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding-right: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: #E5E5E5;
+  }
+
+  .footer-two a{
+    color: #E5E5E5;
+  }
+
+  .footer-two a:hover{
+    text-decoration: underline;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  body{
+    background-color: #A2A2A2;
+    background-image: none;
+  }
+
+  .main-text-background h1{
+    animation: none;
+  }
+}
