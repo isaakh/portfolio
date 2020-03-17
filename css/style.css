@@ -422,7 +422,7 @@ footer{
     border: 10px solid black;
     padding: 30px;
     grid-column: 2/6;
-    text-align: center;
+    text-align: left;
   }
 
   .player-card{
